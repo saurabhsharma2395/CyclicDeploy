@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const { check, validationResult } = require("express-validator");
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 3000;
 
 // Set Templating Enginge
 const handlebars = require("express-handlebars");
