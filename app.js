@@ -1,6 +1,7 @@
 //ITE5315--Professor: Shahdad
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require("path")
 const { check, validationResult } = require("express-validator");
 
 const app = express();
@@ -21,6 +22,8 @@ const HBS = handlebars.create({
   defaultLayout: 'main',
   extname: ".hbs",
 });
+
+app.use(express.static(path.join(__dirname + '/public')));
 app.engine("hbs", HBS.engine);
 app.set("view engine", "hbs");
 const urlencodedParser = bodyParser.urlencoded({ extended: false });

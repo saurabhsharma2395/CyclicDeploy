@@ -1,11 +1,21 @@
-<li>{{data.username}} </li>
-<li>{{data.email}} </li>
+{{#strong}}
+  <h3>The form has been submitted and the following is the data</h3>
+{{/strong}}
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{data.username}}</td>
+      <td>{{data.email}}</td>
+    </tr>
+  </tbody>
+</table>
 <p>
-    Here is the age after 10 years
-    {{calculation 10}}
-</p>
-<p>
-    {{#strong}}
-    Here is sample
-    {{/strong}}
+  Here is the age after 10 years
+  {{calculation 10}}
 </p>

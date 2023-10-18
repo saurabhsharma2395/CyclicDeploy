@@ -1,0 +1,62 @@
+
+/*heading styling*/
+h1{
+    font-family: "Raleway";
+    text-align: center;
+    font-weight: bold;
+    color: #c12078;
+}
+
+/*Collapse table margin and create border, centre align the table*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border:  5px solid navy;
+    border-collapse: collapse;
+}
+
+/*eliminate border between rows*/
+tr{
+    border: none;
+    text-align: center;
+    font-family: "Raleway";
+}
+
+/*eliminate border between columns and do column padding*/
+td, th{
+    padding: 8px;
+    border: none;
+    font-family: "Raleway";
+}
+
+tbody td{
+    border: 1px solid red;
+}
+
+/*Change background and text colour of table header*/
+thead{
+    background-color: goldenrod;
+    color: black;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+    border: 1px solid black;
+}
+
+tbody tr:hover{
+    background-color: lightgray;
+    font-weight: bolder;
+}
+
+#Image {
+    width: 200px;
+}
+
+li {
+    text-align: left;
+}
+
+img{
+    border-radius: 25px;
+}
